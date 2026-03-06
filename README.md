@@ -43,6 +43,8 @@ Training objective:
 
 Next character prediction using cross-entropy loss.
 
+![Mini GPT Architecture](image/mini_gpt_architecture.png)
+
 ---
 
 ## Training
@@ -68,7 +70,22 @@ Where is not be? then came after? O, good
 ```
 
 
----
+## Project Highlights
+
+• Implemented **Transformer decoder architecture from scratch**
+
+• Built **Multi-Head Self Attention with causal masking**
+
+• Implemented **sinusoidal positional encoding**
+
+• Implemented **Feed Forward Networks + residual connections**
+
+• Trained **autoregressive character-level GPT model**
+
+• Achieved **training loss below 1.0**
+
+• Generated Shakespeare-style dialogue
+
 
 ## Technologies Used
 
@@ -78,6 +95,8 @@ Where is not be? then came after? O, good
 - Autoregressive Language Modeling
 
 ---
+
+
 
 ## Learning Outcome
 
@@ -130,3 +149,5 @@ The model will start training and periodically print the loss and generated text
 - Flash Attention
 - Top-k / Top-p sampling
 - Training on larger datasets
+
+
