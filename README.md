@@ -1,5 +1,9 @@
 # Mini GPT — Transformer From Scratch
 
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red)
+![Transformer](https://img.shields.io/badge/Model-Transformer-green)
+
 This project implements a **character-level GPT language model from scratch using PyTorch**.
 
 The goal of this project was to deeply understand the internal mechanics of Large Language Models (LLMs) including:
