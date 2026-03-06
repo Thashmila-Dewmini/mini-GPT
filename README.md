@@ -1,0 +1,92 @@
+# Mini GPT — Transformer From Scratch
+
+This project implements a **character-level GPT language model from scratch using PyTorch**.
+
+The goal of this project was to deeply understand the internal mechanics of Large Language Models (LLMs) including:
+
+- Token Embeddings
+- Positional Encoding
+- Multi-Head Self Attention
+- Causal Masking
+- Feed Forward Networks
+- Residual Connections
+- Layer Normalization
+- Autoregressive Language Modeling
+- Cross Entropy Training
+
+The architecture follows the **Transformer decoder architecture used in GPT models**.
+
+---
+
+## Model Architecture
+
+Input → Token Embedding  → Positional Encoding  → Transformer Blocks  
+
+Each Transformer block contains:
+
+- Multi-Head Self Attention
+- Residual Connection
+- LayerNorm
+- Feed Forward Network
+- Residual Connection
+- LayerNorm
+
+Final layer:
+
+Linear projection → Vocabulary logits
+
+Training objective:
+
+Next character prediction using cross-entropy loss.
+
+---
+
+## Training
+
+Dataset: Shakespeare text  
+Tokenization: Character-level  
+
+Example training progress:
+```
+step 0 loss 4.383574962615967
+step 500 loss 2.0068559646606445
+step 1000 loss 1.6972147226333618
+........
+```
+## Sample Generated Text
+```
+First Citizen:
+See where part, she would do not say'd us.
+
+Second Messenger:
+Look, indeed, ask my states! for the pity
+Where is not be? then came after? O, good
+```
+
+
+---
+
+## Technologies Used
+
+- Python
+- PyTorch
+- Transformer Architecture
+- Autoregressive Language Modeling
+
+---
+
+## Learning Outcome
+
+This project demonstrates a full implementation of the core components used in modern LLMs such as GPT-2 and GPT-3.
+
+The implementation focuses on **understanding the mathematical and architectural foundations of Transformers** rather than using high-level libraries.
+
+---
+
+## Future Improvements
+
+- Subword tokenization (BPE)
+- GPT-2 scaling
+- Flash Attention
+- Top-k / Top-p sampling
+- Training on larger datasets
