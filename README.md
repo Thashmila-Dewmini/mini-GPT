@@ -83,6 +83,42 @@ The implementation focuses on **understanding the mathematical and architectural
 
 ---
 
+## How to Run
+
+1. Clone the repository
+```
+git clone https://github.com/Thashmila-Dewmini/mini-GPT.git
+cd mini-GPT
+```
+
+2. Create virtual environment
+```
+python -m venv venv
+```
+
+3. Activate environment
+```
+Windows:
+venv\Scripts\activate
+
+Mac/Linux:
+source venv/bin/activate
+```
+
+4. Install dependencies
+```
+pip install -r requirements.txt
+```
+
+5. Train the model
+```
+python train.py
+```
+
+The model will start training and periodically print the loss and generated text.
+
+
+
 ## Future Improvements
 
 - Subword tokenization (BPE)
